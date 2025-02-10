@@ -5,7 +5,7 @@
 ]]
 
 --/ Prerequisite
-local far = CFrame.new(0, 1000000, 0)
+local far = CFrame.new((0.5 - math.random()) * 20000000, 1000000, (0.5 - math.random()) * 20000000)
 local Player = game:GetService("Players").LocalPlayer
 local realchar = Player.Character
 local char = Instance.new("Model", workspace)
@@ -154,6 +154,7 @@ Prim.InitChar = function(parts: {BasePart})
 				["Anchored\0"] = true,
 				["CanCollide\0"] = p.Name == "Torso",
 				["CanTouch\0"] = false,
+				["Color"] = p.Color,
 				["AssemblyLinearVelocity\0"] = Vector3.one * math.random(50000, 10000000)
 			}
 		})
