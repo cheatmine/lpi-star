@@ -155,7 +155,7 @@ Prim.InitChar = function(parts: {BasePart})
 				["CanCollide\0"] = p.Name == "Torso",
 				["CanTouch\0"] = false,
 				["Color\0"] = p.Color,
-				["AssemblyLinearVelocity\0"] = Vector3.one * math.random(50000, 10000000)
+				["AssemblyLinearVelocity\0"] = Vector3.yAxis * -300
 			}
 		})
 	end
